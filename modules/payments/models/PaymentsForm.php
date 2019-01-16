@@ -23,7 +23,7 @@ class PaymentsForm extends Model
             // name, email, subject and body are required
             [['name', 'address', 'inn', 'kpp', 'rschet', 'kschet', 'bik', 'bank'], 'required'],
             // email has to be a valid email address
-            ['email', 'email'],
+//            ['email', 'email'],
         ];
     }
 
