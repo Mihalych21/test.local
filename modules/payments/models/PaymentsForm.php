@@ -3,11 +3,13 @@
 namespace app\modules\payments\models;
 
 use yii\base\Model;
+use yii\db\ActiveRecord;
 
 
 class PaymentsForm extends Model
 {
     public $name;
+    public $email;
     public $address;
     public $inn;
     public $kpp;
@@ -17,11 +19,16 @@ class PaymentsForm extends Model
     public $bank;
 
 
+   /* public function tableName()
+    {
+        return 'payments_table';
+    }*/
+    
     public function rules()
     {
         return [
             // name, email, subject and body are required
-            [['name', 'address', 'inn', 'kpp', 'rschet', 'kschet', 'bik', 'bank'], 'required'],
+            [['name', 'email', 'address', 'inn', 'kpp', 'rschet', 'kschet', 'bik', 'bank'], 'required'],
             // email has to be a valid email address
 //            ['email', 'email'],
         ];
@@ -31,6 +38,7 @@ class PaymentsForm extends Model
     {
         return [
 'name' => 'Покупатель',
+'email' => 'Ваш E-mail',
 'address' => 'Ваш адрес',
 'inn' => 'ИНН',
 'kpp' => 'КПП',
@@ -40,4 +48,11 @@ class PaymentsForm extends Model
 'bank' => 'Банк',
         ];
     }
+
+    /* Запись данных в БД отправка сообщения клеинту */
+    public static function paymentsSend()
+    {
+
+    }
+
 }

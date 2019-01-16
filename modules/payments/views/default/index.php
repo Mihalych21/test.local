@@ -14,7 +14,9 @@ use yii\widgets\ActiveForm;
 
             <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-            <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+
+            <?= $form->field($model, 'name') ?>
+            <?= $form->field($model, 'email')->input('email') ?>
 
             <?= $form->field($model, 'address')->textInput() ?>
 

@@ -56,7 +56,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '<action:(index|about|contacts|login|logout|designer|zvonok|politic|vacancies|call|coordinates)>' => 'site/<action>',
+                '<action:(index|about|contacts|login|logout|designer|zvonok|politic|vacancies|call|coordinates|ok)>' => 'site/<action>',
             ],
         ],
 
