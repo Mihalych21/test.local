@@ -3,6 +3,7 @@
 namespace app\modules\payments\controllers;
 
 use yii\web\Controller;
+use app\modules\payments\models\PaymentsForm;
 
 /**
  * Default controller for the `payments` module
@@ -15,6 +16,7 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new PaymentsForm();
+        return $this->render('index', ['model' => $model]);
     }
 }
