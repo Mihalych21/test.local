@@ -1,12 +1,11 @@
 <div class="payments-default-index">
-    <h1><?= $this->context->action->uniqueId ?></h1>
+    <h1>Произвести оплату</h1>
     <p>
-        This is the view content for action "<?= $this->context->action->id ?>".
-        The action belongs to the controller "<?= get_class($this->context) ?>"
-        in the "<?= $this->context->module->id ?>" module.
+       <button class="btn btn-success">Оплатить</button>
     </p>
-    <p>
-        You may customize this page by editing the following file:<br>
-        <code><?= __FILE__ ?></code>
+    <p style="width: 600px">
+        Нажимая на кнопку «оплатить», я даю согласие на <a class="underline" rel="nofollow" href="/politic">обработку
+            персональных
+            данных</a> в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
     </p>
 </div>

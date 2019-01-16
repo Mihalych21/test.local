@@ -125,4 +125,11 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /* Политика конфедициальности */
+    public function actionPolitic()
+    {
+//        die('here')
+        return $this->renderFile(__DIR__ . '/../views/site/politic.php');
+    }
 }
