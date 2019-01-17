@@ -34,6 +34,7 @@
             <th>корр. счет</th>
             <th>БИК</th>
             <th>банк</th>
+            <th>цена</th>
 
         </tr>
     <tr>
@@ -47,6 +48,7 @@
         <td><?= $model->kschet ?></td>
         <td><?= $model->bik ?></td>
         <td><?= $model->bank ?></td>
+        <td><?= $model->money ?></td>
     </tr>
 </table>
 <br>

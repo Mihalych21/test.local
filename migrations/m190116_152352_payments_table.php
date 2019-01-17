@@ -22,6 +22,8 @@ class m190116_152352_payments_table extends Migration
             'kschet' => $this->string(),
             'bik' => $this->string(),
             'bank' => $this->string(),
+            'money' => $this->string(),
+            'count' => $this->string(),
         ]);
 
     }

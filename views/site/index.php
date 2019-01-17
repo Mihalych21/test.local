@@ -12,10 +12,7 @@ $this->title = 'TEST';
         <br>
         <br>
         <br>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <a href="/payments/find-all"><button class="btn btn-success" style="font-size: 200%;color:red">Получить все записи из базы</button></a>
     </div>
 
     <div class="body-content">

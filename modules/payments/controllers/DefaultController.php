@@ -17,7 +17,6 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
-//        $model = new PaymentsForm();
         $model = new PaymentsForm();
 
         if ($model->load(Yii::$app->request->post())) { // данные пришли

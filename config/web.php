@@ -56,7 +56,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-//                '<action:(index|about|contacts|login|logout|politic|vacancies|call|coordinates|ok|payments)>' => 'site/<action>',
+                '<module:[\wd-]+>/<controller:[\wd-]+>/<action:[\wd-]+>/<id:\d+>] => <module>/<controller>/<action>',
+
             ],
         ],
 
