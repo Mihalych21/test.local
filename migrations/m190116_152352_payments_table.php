@@ -14,14 +14,14 @@ class m190116_152352_payments_table extends Migration
     {
         $this->createTable('payments_table', [
             'id' =>  $this->primaryKey(),
-            'name' => $this->string()->notNull(),
-            'address' => $this->string()->notNull(),
-            'inn' => $this->string()->notNull(),
-            'kpp' => $this->string()->notNull(),
-            'rschet' => $this->string()->notNull(),
-            'kschet' => $this->string()->notNull(),
-            'bik' => $this->string()->notNull(),
-            'bank' => $this->string()->notNull(),
+            'name' => $this->string(),
+            'address' => $this->string(),
+            'inn' => $this->string(),
+            'kpp' => $this->string(),
+            'rschet' => $this->string(),
+            'kschet' => $this->string(),
+            'bik' => $this->string(),
+            'bank' => $this->string(),
         ]);
 
     }

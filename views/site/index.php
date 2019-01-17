@@ -7,7 +7,11 @@ $this->title = 'TEST';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <br>
+        <a href="/payments"><button class="btn btn-danger" style="font-size: 200%;color:red">Оплатить</button></a>
+        <br>
+        <br>
+        <br>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

@@ -4,6 +4,7 @@ namespace app\modules\payments;
 use yii\helpers\Html;
 use app\modules\payments\models\PaymentsForm;
 use yii\widgets\ActiveForm;
+use yii\db\ActiveRecord;
 ?>
 
 <h1>Произвести оплату</h1>
@@ -16,16 +17,16 @@ use yii\widgets\ActiveForm;
 
 
             <?= $form->field($model, 'name') ?>
-            <?= $form->field($model, 'email')->input('email') ?>
+            <?= $form->field($model, 'email')->input('email',['required' => true] ) ?>
 
-            <?= $form->field($model, 'address')->textInput() ?>
+            <?= $form->field($model, 'address')->textInput(['required' => true]) ?>
 
-            <?= $form->field($model, 'inn') ?>
-            <?= $form->field($model, 'kpp') ?>
-            <?= $form->field($model, 'rschet') ?>
-            <?= $form->field($model, 'kschet') ?>
-            <?= $form->field($model, 'bik') ?>
-            <?= $form->field($model, 'bank') ?>
+            <?= $form->field($model, 'inn')->textInput(['required' => true]) ?>
+            <?= $form->field($model, 'kpp')->textInput(['required' => true]) ?>
+            <?= $form->field($model, 'rschet')->textInput(['required' => true]) ?>
+            <?= $form->field($model, 'kschet')->textInput(['required' => true]) ?>
+            <?= $form->field($model, 'bik')->textInput(['required' => true]) ?>
+            <?= $form->field($model, 'bank')->textInput(['required' => true]) ?>
 
 
             <div class="form-group">

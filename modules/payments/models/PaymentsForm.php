@@ -6,7 +6,7 @@ use yii\base\Model;
 use yii\db\ActiveRecord;
 
 
-class PaymentsForm extends Model
+class PaymentsForm extends ActiveRecord
 {
     public $name;
     public $email;
@@ -19,10 +19,10 @@ class PaymentsForm extends Model
     public $bank;
 
 
-   /* public function tableName()
+    public static function tableName()
     {
         return 'payments_table';
-    }*/
+    }
     
     public function rules()
     {
@@ -47,12 +47,6 @@ class PaymentsForm extends Model
 'bik' => 'БИК',
 'bank' => 'Банк',
         ];
-    }
-
-    /* Запись данных в БД отправка сообщения клеинту */
-    public static function paymentsSend()
-    {
-
     }
 
 }
